@@ -219,13 +219,10 @@ from rich.traceback import install as override_default_traceback
 
 override_default_traceback()
 cprint = Console().print
-
 # Get Columns of Screen
 columns = get_terminal_size().columns
-
 websites_url = f"{repo_url}/releases/download/v{version[:3]}/websites.zip" 
 # CF = Cloudflared, LX = LocalXpose, LHR = LocalHostRun
-
 home = getenv("HOME")
 ssh_dir = f"{home}/.ssh"
 sites_dir = f"{home}/.websites"
